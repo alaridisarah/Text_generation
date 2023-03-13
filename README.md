@@ -14,8 +14,8 @@ Text generator models can be used in many fields, in healthcare, the text genera
 ### Dataset 
 We used data from kaggle and are loaded by the opendatasets library an English-language dataset [CNN/DailyMail Dataset](https://www.kaggle.com/datasets/gowrishankarp/newspaper-text-summarization-cnn-dailymail) has little over 300,000 distinct news items and highlight sentences. according to reporting from CNN and the Daily Mail, the dataset is divided into three segments: train, validation, and test.
 #### Prepare the dataset
-in the beginning, we need to clean the text from  punctuation and stop words to ensure that all articles only have a unique word. A stop words is a low-level information in a text; Ntlk library has a collection of stop words.
-Second, a pre-processing of the text in NLP includes:
+In the beginning, we need to clean the text from  punctuation and stop words to ensure that all articles only have a unique word. A stop words is a low-level information in a text; Ntlk library has a collection of stop words.
+Then, a pre-processing of the text in NLP includes:
 - Tokenization: a token is an atomic unit in the text. The tokenization process splits text into smaller units (word).
 - Sequencing: a process to convert the sequence of words to a sequence of numbers.
 - Padding: the input of NN have the same size, and to ensure that all input has the same size, we do a padding to each sequence.
